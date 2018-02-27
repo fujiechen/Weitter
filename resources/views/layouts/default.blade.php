@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Sample') - Laravel Small Project</title>
+    <title>@yield('title', 'Weitter') - Online Social Media</title>
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
@@ -9,6 +9,7 @@
 
     <div class="containter">
         <div class="col-md-offset-1 col-md-10">
+            @include('shared._messages')
             @yield('content')
             @include('layouts._footer')
         </div>
